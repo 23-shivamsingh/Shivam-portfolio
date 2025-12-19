@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Todo List App",
     tech: "Html • CSS • JavaScript",
-    image: "/works/todo.png",
+    image: "/works/Todo.png",
     link: "https://23-shivamsingh.github.io/TODO_APP/",
   },
 ];
