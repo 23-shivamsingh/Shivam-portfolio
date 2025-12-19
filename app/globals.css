@@ -5,13 +5,6 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,8 +12,255 @@
   }
 }
 
+/* Global styles or component-specific CSS Module */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sora);
+}
+
+h1,
+h2,
+h3,
+.section-title {
+  font-family: var(--font-russo-one);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #b384ff, #5a35ff);
+  background-clip: text; /* standard property for compatibility */
+  -webkit-background-clip: text; /* WebKit */
+  -moz-background-clip: text; /* older Firefox (safe to include) */
+  color: transparent; /* allow gradient to show through */
+  -webkit-text-fill-color: transparent;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+p {
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+}
+
+.hero-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroFade 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes heroFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===================== ANIMATION ===================== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* 🌊 Animated gradient background */
+.bg-wave {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #ffffff;
+}
+
+/* Full-screen moving gradient */
+.bg-wave::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  background: radial-gradient(
+    circle at top right,
+    #281454 0%,
+    #05000f 55%,
+    #020008 100%
+  );
+
+  /* larger so movement looks smooth */
+  background-size: 320% 320%;
+
+  /* faster now: 7s instead of 16s */
+  animation: wave-move 5s ease-in-out infinite alternate;
+}
+
+@keyframes wave-move {
+  0% {
+    background-position: 0% 40%;
+  }
+  50% {
+    background-position: 80% 60%;
+  }
+  100% {
+    background-position: 10% 20%;
+  }
+}
+
+/* ===================== LOADER ===================== */
+
+.preloader-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* same background as your animated gradient */
+  background: radial-gradient(
+    circle at top right,
+    #281454 0%,
+    #05000f 55%,
+    #020008 100%
+  );
+
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.7s ease-out, visibility 0.7s ease-out;
+}
+
+.preloader-wrapper.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* main loading text container */
+/* main loading text container */
+.loader-text {
+  display: flex;
+  gap: 0.3rem; /* space between letters */
+  font-size: 2.4rem; /* not too big */
+  font-weight: 200; /* less bold */
+  color: #ffffff;
+  letter-spacing: 0.3em; /* gives L O A D I N G look */
+}
+
+/* each letter: appears, stays, then resets */
+.loader-letter {
+  display: inline-block;
+  opacity: 0;
+  animation: letter-seq 1.6s ease-out infinite both;
+}
+
+/* build-up effect:
+   - with delays from JS, you get L, then LO, then LOA, ...  */
+@keyframes letter-seq {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ===================== PAGE ENTER ANIMATION ===================== */
+
+#page-content {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  filter: blur(8px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out,
+    filter 0.6s ease-out;
+}
+
+/* When loader hides, page smoothly appears */
+.preloader-wrapper.hide ~ #page-content {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float:hover {
+  animation-play-state: paused;
+}
+
+/* Testimonials */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
