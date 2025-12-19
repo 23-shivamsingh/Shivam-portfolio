@@ -227,7 +227,7 @@ body {
 }
 
 .animate-scroll {
-  animation: scroll 25s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes wave {
@@ -251,9 +251,9 @@ body {
   }
 }
 
-
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
