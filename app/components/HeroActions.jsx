@@ -36,7 +36,7 @@ export default function HeroActions() {
     <div className="w-full flex flex-col items-center gap-4 lg:flex-row lg:items-center lg:justify-start">
       {/* Download CV */}
       <a
-        href="https://drive.google.com/uc?export=download&id=1gVgWpAdvLOp4PaC2hOJTFIcXADTfZwQ0"
+        href="https://drive.google.com/uc?export=download&id=1EcOZCIbo-a941n3i7wp-H7azuccrs0OI"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-3 rounded-full border border-violet-500/80 px-8 py-3 text-sm font-semibold tracking-[0.15em] uppercase text-violet-200 hover:border-violet-400 hover:bg-violet-500/10 hover:shadow-[0_0_25px_rgba(167,139,250,0.6)] transition"
