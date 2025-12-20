@@ -36,7 +36,7 @@ export default function HeroActions() {
     <div className="w-full flex flex-col items-center gap-4 lg:flex-row lg:items-center lg:justify-start">
       {/* Download CV */}
       <a
-        href="https://drive.google.com/file/d/1gVgWpAdvLOp4PaC2hOJTFIcXADTfZwQ0/view?usp=drive_link"
+        href="https://drive.google.com/uc?export=download&id=1gVgWpAdvLOp4PaC2hOJTFIcXADTfZwQ0"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center gap-3 rounded-full border border-violet-500/80 px-8 py-3 text-sm font-semibold tracking-[0.15em] uppercase text-violet-200 hover:border-violet-400 hover:bg-violet-500/10 hover:shadow-[0_0_25px_rgba(167,139,250,0.6)] transition"
@@ -44,7 +44,6 @@ export default function HeroActions() {
         <span>Download CV</span>
         <FiDownload className="text-lg transition-transform group-hover:translate-y-0.5" />
       </a>
-
       {/* Social Icons */}
       <div className="flex flex-wrap items-center justify-center gap-4 lg:justify-start">
         {socials.map(({ icon: Icon, href, label }) => (
