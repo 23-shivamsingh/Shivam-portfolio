@@ -49,7 +49,7 @@ export default function Navbar() {
             S
           </div>
           <span className="hidden sm:block text-xs sm:text-sm opacity-80 hover:text-purple-300 transition-colors">
-            shivams2307@gmail.com
+            thakurshivam2307@gmail.com
           </span>
         </Link>
 
