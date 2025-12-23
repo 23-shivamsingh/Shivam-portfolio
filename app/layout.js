@@ -17,6 +17,11 @@ const sora = Sora({
 export const metadata = {
   title: "Shivam Portfolio",
   description: "My personal portfolio built with Next.js",
+
+  // 👇 ADD THIS
+  verification: {
+    google: "ZDma2V5NE2mIn7LNfkKxgZGGQW4QGrmSFVWfQpZWIi4",
+  },
 };
 
 export default function RootLayout({ children }) {
