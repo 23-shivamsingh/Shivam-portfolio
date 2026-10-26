@@ -4,42 +4,60 @@ import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
-  {
-    title: "Dr. Appointment System",
-    tech: "Next.js • Tailwind CSS • NeonDB • Node.js • Clerk",
-    image: "/works/VaidyaMeet.png",
-    link: "https://vaidyameet.vercel.app/",
-  },
-  {
-    title: "Ai Resume Builder",
-    tech: "MongoDb • Express.js • React.js • Node.js • OpenAI API",
-    image: "/works/Ai_resume.jpeg",
-    link: "https://ai-resume-builder-ecru-alpha.vercel.app/",
-  },
-  {
-    title: "Tic-Tac-Toe Game",
-    tech: "Html • CSS • JavaScript",
-    image: "/works/Game.png",
-    link: "https://23-shivamsingh.github.io/PRODIGY_WD_03/",
-  },
-  {
-    title: "Weather App",
-    tech: "Html • CSS • JavaScript • OpenWeather API",
-    image: "/works/Weather.png",
-    link: "https://23-shivamsingh.github.io/Weather/",
-  },
-  {
-    title: "Currency Converter",
-    tech: "Html • CSS • JavaScript",
-    image: "/works/Currency_Converter.png",
-    link: "https://23-shivamsingh.github.io/Currency_Converter/",
-  },
-  {
-    title: "Todo List App",
-    tech: "Html • CSS • JavaScript",
-    image: "/works/Todo.png",
-    link: "https://23-shivamsingh.github.io/TODO_APP/",
-  },
+{
+  title: "NEXA – Social Without the Feed",
+  tech: "React • TypeScript • Vite • Tailwind CSS • Zustand • Framer Motion",
+  image: "/works/Nexa.png",
+  link: "https://nexa-social-arena.vercel.app/",
+},
+{
+  title: "FixWise AI",
+  tech: "Next.js • TypeScript • Tailwind CSS • Prisma • Neon PostgreSQL • Gemini API",
+  image: "/works/FixWise.png",
+  link: "https://fixwise-ai-eight.vercel.app/",
+},
+{
+  title: "Voltsza",
+  tech: "React • TypeScript • Tailwind CSS • Node.js",
+  image: "/works/Voltsza.png",
+  link: "https://voltsza.in/",
+},
+{
+  title: "Dr. Appointment System",
+  tech: "Next.js • Tailwind CSS • NeonDB • Node.js • Clerk",
+  image: "/works/VaidyaMeet.png",
+  link: "https://vaidyameet.vercel.app/",
+},
+{
+  title: "Ai Resume Builder",
+  tech: "MongoDb • Express.js • React.js • Node.js • OpenAI API",
+  image: "/works/Ai_resume.jpeg",
+  link: "https://ai-resume-builder-ecru-alpha.vercel.app/",
+},
+{
+  title: "Tic-Tac-Toe Game",
+  tech: "Html • CSS • JavaScript",
+  image: "/works/Game.png",
+  link: "https://23-shivamsingh.github.io/PRODIGY_WD_03/",
+},
+{
+  title: "Weather App",
+  tech: "Html • CSS • JavaScript • OpenWeather API",
+  image: "/works/Weather.png",
+  link: "https://23-shivamsingh.github.io/Weather/",
+},
+{
+  title: "Currency Converter",
+  tech: "Html • CSS • JavaScript",
+  image: "/works/Currency_Converter.png",
+  link: "https://23-shivamsingh.github.io/Currency_Converter/",
+},
+{
+  title: "Todo List App",
+  tech: "Html • CSS • JavaScript",
+  image: "/works/Todo.png",
+  link: "https://23-shivamsingh.github.io/TODO_APP/",
+},
 ];
 
 export default function Works() {

@@ -10,12 +10,20 @@ const testimonials = [
     message:
       "Shivam is dedicated, reliable, and consistently delivers quality work. His structured approach and attention to detail made collaboration smooth and effective.",
   },
-  {
-    name: "Dinesh Kabra",
-    role: "Founder of  RHB’s Desi Zaika",
-    image: "/testimonials/Dinesh.png",
+  // {
+  //   name: "Dinesh Kabra",
+  //   role: "Founder of  RHB’s Desi Zaika",
+  //   image: "/testimonials/Dinesh.png",
+  //   message:
+  //     "Shivam built a modern, well-crafted UI that met our expectations perfectly. His efficient communication and attention to detail ensured a smooth experience.",
+  // },
+
+    {
+    name: "Monish Bhatkaar",
+    role: "Director of AAD TECH O&M",
+    image: "/testimonials/Monish.png",
     message:
-      "Shivam built a modern, well-crafted UI that met our expectations perfectly. His efficient communication and attention to detail ensured a smooth experience.",
+      "Shivam is dedicated, reliable, and consistently delivers quality work. His structured approach and attention to detail made collaboration smooth and effective.",
   },
 ];
 
